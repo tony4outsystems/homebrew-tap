@@ -2,9 +2,9 @@ class OdcCli < Formula
   include Language::Python::Virtualenv
 
   desc "CLI for driving OutSystems Developer Cloud (ODC) APIs"
-  homepage "https://github.com/tony4outsystems/odc-api-sandbox"
-  url "https://github.com/tony4outsystems/odc-api-sandbox/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "f3803f30621bc061ca40cdfca0a2f22a12287d638e7c721e5e4c6fd9ffd5f424"
+  homepage "https://github.com/tony4outsystems/odc-cli"
+  url "https://github.com/tony4outsystems/odc-cli/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "551fc45ff3de155b289e9cc08e423bb5309ba48e9a46597bf677073e46a75a93"
   license "MIT"
 
   depends_on "python@3.12"
@@ -42,6 +42,11 @@ class OdcCli < Formula
   resource "sniffio" do
     url "https://files.pythonhosted.org/packages/a2/87/a6771e1546d97e7e041b6ae58d80074f81b7d5121207425c964ddf5cfdbd/sniffio-1.3.1.tar.gz"
     sha256 "f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc"
+  end
+
+  resource "typing-extensions" do
+    url "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz"
+    sha256 "dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5"
   end
 
   resource "python-dotenv" do
